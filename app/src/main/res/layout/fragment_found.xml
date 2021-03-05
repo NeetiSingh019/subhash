@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Did You Find Someone"
+        android:textColor="@color/black"
+        android:textSize="25dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location Where You Found it"
+            android:textColor="@color/black"
+            android:textSize="17dp"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_baseline_edit_location_24">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Write Place"
+        android:textColor="@color/black"
+        android:textSize="17dp"></EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#CFD1D3"
+        android:backgroundTint="#DBDFE1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:outlineProvider="background">
+
+        <TextView
+            android:id="@+id/text_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breed  "
+            android:textColor="@color/black"
+            android:textSize="17dp">
+
+        </TextView>
+
+        <Spinner
+            android:id="@+id/Breed_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:requiresFadingEdge="vertical"
+            android:tooltipText="15dp">
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is the animal wearing the collar"
+            android:textColor="@color/black"
+            android:textSize="17dp">
+
+        </TextView>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textOff="no"
+            android:textOn="yes">
+
+        </ToggleButton>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="what state the pet is in"
+        android:textColor="@color/black"
+        android:textSize="17dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Scared"
+            android:textColor="@color/black"
+            android:textSize="17dp">
+
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Calm"
+            android:textColor="@color/black"
+            android:textSize="17dp">
+
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="friendly"
+            android:textColor="@color/black"
+            android:textSize="17dp">
+
+        </CheckBox>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Injured"
+            android:textColor="@color/black"
+            android:textSize="17dp">
+
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Aggressive"
+            android:textColor="@color/black"
+            android:textSize="17dp">
+
+        </CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:textColor="@color/black"
+            android:textSize="17dp">
+
+        </CheckBox>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Other Information"
+        android:textSize="17dp">
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Photos"
+            android:textColor="@color/black"
+            android:textSize="17dp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@mipmap/ic_launcher">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Contact Details"
+        android:textColor="@color/black"
+        android:textSize="17dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/email_ET1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:text="Email"
+        android:textSize="17dp">
+
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textSize="17dp">
+
+    </EditText>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I hereby agree to have read and understood the disclaimer"
+        android:textColor="@color/black"
+        android:textSize="17dp">
+
+    </CheckBox>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="CLOSE"
+            android:textColor="@color/white"></Button>
+
+
+        <Button
+            android:id="@+id/Submit_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="SUBMIT"
+            android:textColor="@color/white">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>
